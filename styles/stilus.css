@@ -1,12 +1,12 @@
 body {
     margin: 0;  
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 header{
     background: white;
-   width: 100%;
+    width: 100%;
     height: 140px;
+    
 }
 header img{
     float: left;
@@ -14,6 +14,7 @@ header img{
 }
 header h1{
    padding-top: 50px;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 div#wrapper {
   margin: 0;
@@ -41,8 +42,17 @@ nav ul li a:hover{
     color: gray;
     
 }
-div.tartalom{
-    padding: 10px;
+.tartalom1{
+    background:white; 
+    width:100%; 
+    margin:0; 
+    padding: 20px;
+
+}
+.tartalom2{
+    width:100%; 
+    margin:0; 
+    padding: 20px;
 
 }
 div#content{

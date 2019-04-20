@@ -16,9 +16,9 @@ $lablec = array(
 );
 
 $oldalak = array(
-    '/' => array('fajl' => 'cimlap', 'szoveg' => 'Címlap', 'menun' => array(1,1)),
-    'a' => array('fajl' => 'n', 'szoveg' => 'Címlap', 'menun' => array(1,1)),
-    'n' => array('fajl' => 'a', 'szoveg' => 'Címlap', 'menun' => array(1,1))
+    '/' => array('fajl' => 'cimlap', 'szoveg' => 'Főoldal', 'menun' => array(1,1)),
+    'magunkrol' => array('fajl' => 'magunkrol', 'szoveg' => 'Magunkról', 'menun' => array(1,1)),
+    'partnereink' => array('fajl' => 'partnereink', 'szoveg' => 'Partnereink', 'menun' => array(1,1))
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');

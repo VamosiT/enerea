@@ -1,7 +1,7 @@
 div#img{
     margin:0;
     width: 100%;
-    background: url('../images/solar.jpg');
+    background: url('../images/solar.jpg') fixed;
     height: 500px;
 }
 div#img h1 {
@@ -10,4 +10,8 @@ div#img h1 {
     padding-top: 100px;
     margin:0;
     
+}
+.left{
+    float:left;
+    margin-right: 30px;
 }
