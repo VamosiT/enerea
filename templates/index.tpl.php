@@ -29,8 +29,9 @@
 					<?php } ?>
                 </ul>
             </nav>
-        </aside>
-        <div id="content">
+		</aside>
+
+		<div id="content">
             <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
         </div>
     </div>
