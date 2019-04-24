@@ -21,7 +21,7 @@
 
 </head>
 <body>
-	<header>
+	<header style="margin-top:70px;">
 		<img src="./images/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
 		<h1><?= $fejlec['cim'] ?></h1>
 		<?php if (isset($fejlec['motto'])) { ?><h2><?= $fejlec['motto'] ?></h2><?php } ?>
@@ -29,8 +29,8 @@
 	</header>
     <div id="wrapper">
         <aside id="nav">
-            <nav>
-                <ul>
+		<nav class="navbar fixed-top navbar-light" style="background-color:#e3e0f3;">
+		    <ul>
 					<?php foreach ($oldalak as $url => $oldal) { ?>
 						<?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
 							<li<?= (($oldal == $keres) ? ' class="active"' : '') ?>>
@@ -39,8 +39,24 @@
 							</li>
 						<?php } ?>
 					<?php } ?>
+					<li><a href="#">Eredeti oldal link </a></li>
+					<!-- Google keresp -->
+					
                 </ul>
             </nav>
+			<script>
+					(function() {
+						var cx = '016051556322784773242:rjcmquihc5u';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+					})();
+					</script>
+					
+					<gcse:search></gcse:search>
 		</aside>
 
 		<div id="content">
