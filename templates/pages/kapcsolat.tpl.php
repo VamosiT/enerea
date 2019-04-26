@@ -8,7 +8,7 @@
             <label>Tárgy:</label>
             <input type="text" name="targy" required class="form-control"><br>
             <label>Üzenet:</label>
-            <textarea name="szoveg" id="szoveg" cols="30" rows="10" required class="form-control"></textarea><br>
+            <textarea name="uzenet" id="uzenet" cols="30" rows="10" required class="form-control"></textarea><br>
             <input type="submit" name="belepes" value="Küldés" class="btn btn-primary">
 
     </form>

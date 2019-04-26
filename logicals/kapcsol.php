@@ -1,19 +1,17 @@
 <?php
-if(isset($_POST['email']) && isset($_POST['targy']) && isset($_POST['szoveg'])) 
+if(isset($_POST['email']) && isset($_POST['targy']) && isset($_POST['uzenet'])) 
 {
-    if(!empty($_POST['email']) && !empty($_POST['targy']) && !empty($_POST['szoveg']) && strpos($_POST['email'], '@') !== false)
+    if(!empty($_POST['email']) && !empty($_POST['targy']) && !empty($_POST['uzenet']) && strpos($_POST['email'], '@') !== false)
     {
         try 
-        {
-            $dbh = new PDO('mysql:host=localhost;dbname=gyakorlat7', 'root', 'root',
-                            array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
-            $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
+        {  
+            require_once("includes/sql.inc.php");
             
-            $sqlInsert = "insert into email(id, email, targy, szoveg)
-                            values(0, :email, :targy, :szoveg)";
+            $sqlInsert = "insert into email(id, email, targy, uzenet)
+                            values(0, :email, :targy, :uzenet)";
             $stmt = $dbh->prepare($sqlInsert); 
             $stmt->execute(array(':email' => $_POST['email'], ':targy' => $_POST['targy'],
-                                    ':szoveg' => $_POST['szoveg'])); 
+                                    ':uzenet' => $_POST['uzenet'])); 
             if($count = $stmt->rowCount()) {
                 $newid = $dbh->lastInsertId();
                 $uzenet = '<div class="alert alert-success" role="alert">Az email küldése sikeres volt!</div>'.

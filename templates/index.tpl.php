@@ -39,9 +39,7 @@
 							</li>
 						<?php } ?>
 					<?php } ?>
-					<li><a href="#">Eredeti oldal link </a></li>
-					<!-- Google keresp -->
-					
+					<li><a href="http://www.enerea.eu/index.php/hu/" target="_blank">Eredeti oldal link </a></li>					
                 </ul>
             </nav>
 			<script>

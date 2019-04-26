@@ -17,7 +17,7 @@
                 echo '<div class="tartalom1">';
             else
             echo '<div class="tartalom2">';
-            echo "<strong>Email cím<br></strong>".$row["email"] . "<br>" . "<strong>Tárgy</strong><br> ". $row["targy"] . "<br>". "<strong>Üzenet</strong><br>" . $row["szoveg"] . "<br></div>";
+            echo "<strong>Email cím<br></strong>".$row["email"] . "<br>" . "<strong>Tárgy</strong><br> ". $row["targy"] . "<br>". "<strong>Üzenet</strong><br>" . $row["uzenet"] . "<br></div>";
         }
     }
     catch (PDOException $e) {
